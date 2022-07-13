@@ -1,5 +1,5 @@
-import 'dotenv/config'
-import * as S3 from 'aws-sdk/clients/s3'
+require('dotenv/config').config()
+const S3 = require('aws-sdk/clients/s3')
 
 /**
  * A function that upload an object in AWS S3 using the content of the file.
