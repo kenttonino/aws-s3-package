@@ -20,7 +20,7 @@ AWS_SECRET_ACCESS_KEY=
 3. Create your your upload API using GraphQL (highly suggest graphql-upload v13.0.0).
 
 4. Example.
-```bash
+```javascript
 import { s3UploadFile, s3DeleteFile } from 'aws-s3-package'
 
 async uploadAvatar(
