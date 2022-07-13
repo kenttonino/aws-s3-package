@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "- This is an NPM package that will allow to use AWS-SDK much simpler. Compatible to RestAPI, GraphQL, and NodeJS.",
   "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "format": "prettier --write \"src/**/*.js\""
