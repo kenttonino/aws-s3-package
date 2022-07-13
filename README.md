@@ -1,5 +1,5 @@
 ### AWS S3 API
-- This is an NPM package that will allow to use AWS-SDK much simpler. Compatible to RestAPI, GraphQL, and NodeJS.
+- This is an NPM package that will allow to use AWS-SDK for S3 much simpler. Compatible to GraphQL and NodeJS.
 
 ### Technologies | Packages Used
 - Backend: JavaScript, NodeJS
@@ -16,4 +16,4 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 ```
 
-3. Create your your upload API using Rest API or GraphQL (highly suggest graphql-upload v13.0.0).
+3. Create your your upload API using GraphQL (highly suggest graphql-upload v13.0.0).
