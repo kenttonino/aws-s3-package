@@ -2,8 +2,8 @@
 - This is an NPM package that will allow to use AWS-SDK much simpler. Compatible to RestAPI, GraphQL, and NodeJS.
 
 ### Technologies | Packages Used
-- Backend: Prettier, AWS-SDK, Dotenv, JavaScript, NodeJS
-- Others: Git, Bash, Github, Github Actions
+- Backend: JavaScript, NodeJS
+- Others: Prettier, AWS-SDK, Dotenv, Git, Bash, Github, Github Actions
 
 ### Setup
 1. Install the package.
