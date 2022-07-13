@@ -1,6 +1,6 @@
 {
   "name": "aws-s3-package",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "- This is an NPM package that will allow to use AWS-SDK much simpler. Compatible to RestAPI, GraphQL, and NodeJS.",
   "main": "index.js",
   "type": "module",
