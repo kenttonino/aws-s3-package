@@ -4,7 +4,7 @@ import * as S3 from 'aws-sdk/clients/s3'
 /**
  * A function that upload an object in AWS S3 using the content of the file.
  */
-export const s3UploadFile = (file) => {
+module.exports.s3UploadFile = function (file) {
   const bucketName = process.env.AWS_BUCKET_NAME
   const region = process.env.AWS_BUCKET_REGION
   const accessKeyId = process.env.AWS_ACCESS_KEY_ID
@@ -31,7 +31,7 @@ export const s3UploadFile = (file) => {
 /**
  * A function that delete an object in AWS S3 using the key.
  */
-export const s3DeleteFile = async (key) => {
+module.exports.s3DeleteFile = async (key) => {
   const bucketName = process.env.AWS_BUCKET_NAME
   const region = process.env.AWS_BUCKET_REGION
   const accessKeyId = process.env.AWS_ACCESS_KEY_ID
