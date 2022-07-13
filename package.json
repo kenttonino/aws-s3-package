@@ -1,0 +1,25 @@
+{
+  "name": "aws-s3-package",
+  "version": "1.0.0",
+  "description": "- This is an NPM package that will allow to use AWS-SDK much simpler. Compatible to RestAPI, GraphQL, and NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenttonino/aws-s3-package.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenttonino/aws-s3-package/issues"
+  },
+  "homepage": "https://github.com/kenttonino/aws-s3-package#readme",
+  "bin": "./src/index.js",
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}
