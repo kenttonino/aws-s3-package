@@ -21,6 +21,8 @@ AWS_SECRET_ACCESS_KEY=
 
 4. Example.
 ```javascript
+/* TypeScript Approach */
+
 import { s3UploadFile, s3DeleteFile } from 'aws-s3-package'
 import { FileUpload } from 'graphql-upload'
 
