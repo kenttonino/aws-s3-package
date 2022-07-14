@@ -22,19 +22,17 @@ AWS_SECRET_ACCESS_KEY=
 4. Example.
 ```javascript
 import { s3UploadFile, s3DeleteFile } from 'aws-s3-package'
+import { FileUpload } from 'graphql-upload'
 
-async uploadAvatar(
-  id: number,
+async uploadFile(
   avatar: FileUpload,
-): Promise<UploadAvatarOutput> {
-  // deleting a file to S3
+): void {
+  await s3UploadFile(avatar)
+}
+
+async deleteFile(
+  avatar: FileUpload,
+): void {
   await s3DeleteFile(avatar.filename)
-
-  // uploading a file to S3
-  const uploadImage = await s3UploadFile(avatar)
-
-  return {
-    avatar: uploadImage.Location,
-  }
 }
 ```
