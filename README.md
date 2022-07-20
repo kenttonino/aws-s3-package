@@ -4,7 +4,7 @@
 
 ### Technologies | Packages Used
 - Backend: JavaScript, NodeJS
-- Others: AWS-SDK, Dotenv, Git, Github Actions
+- Others: AWS-SDK, Dotenv, Github Actions
 
 ### Setup
 1. Install the package.
