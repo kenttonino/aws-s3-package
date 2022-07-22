@@ -1,6 +1,7 @@
 ### AWS S3 Package
 - This is an NPM package that will allow to use AWS-SDK for S3 much simpler.
 - Compatible with JavaScript, TypeScript, GraphQL, and NodeJS.
+- Currently in progress.
 
 ### Technologies | Packages Used
 - Backend: JavaScript, NodeJS
