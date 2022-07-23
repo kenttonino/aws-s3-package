@@ -1,8 +1,12 @@
 require('dotenv').config()
 const S3 = require('aws-sdk/clients/s3')
+const AWS = require('aws-sdk')
 
 /**
  * A function that upload an object in AWS S3 using the content of the file.
+ *
+ * @param {{ createReadStream: Function, encoding: string, mimetype: string, filename: string }} file
+ * @returns { S3.ManagedUpload.SendData }
  */
 module.exports.s3UploadFile = function (file) {
   const bucketName = process.env.AWS_BUCKET_NAME
@@ -29,7 +33,10 @@ module.exports.s3UploadFile = function (file) {
 }
 
 /**
- * A function that delete an object in AWS S3 using the key.
+ * A function that will delete the upload file in S3 using the key.
+ *
+ * @param { string } key
+ * @returns { S3.DeleteObjectOutput | AWS.AWSError }
  */
 module.exports.s3DeleteFile = async (key) => {
   const bucketName = process.env.AWS_BUCKET_NAME

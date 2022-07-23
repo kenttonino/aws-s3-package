@@ -18,24 +18,24 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 ```
 
-3. Create your your upload API using GraphQL (highly suggest graphql-upload v13.0.0).
+3. Create upload API using GraphQL (highly suggest graphql-upload v13.0.0).
 
 4. Example.
-```javascript
+```typescript
 /* TypeScript Approach */
 
 import { s3UploadFile, s3DeleteFile } from 'aws-s3-package'
 import { FileUpload } from 'graphql-upload'
 
 async uploadFile(
-  avatar: FileUpload,
+  file: FileUpload,
 ): void {
-  await s3UploadFile(avatar)
+  await s3UploadFile(file)
 }
 
 async deleteFile(
-  avatar: FileUpload,
+  file: FileUpload,
 ): void {
-  await s3DeleteFile(avatar.filename)
+  await s3DeleteFile(file.filename)
 }
 ```
